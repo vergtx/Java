@@ -1,0 +1,32 @@
+package chaprter07.abstraction;
+
+public class MessengerTest {
+	public static void main(String[] args) {
+		
+		IPhoneMessenger iphone = new IPhoneMessenger();
+		GalaxyMessenger galaxy = new GalaxyMessenger();
+		
+		
+		System.out.println("메신저 최소문자크기" + Messenger.MIN_SIZE);
+		System.out.println("메신저 최소문자크기" + Messenger.MAX_SIZE);
+		
+		iphone.setLogin(true);
+		iphone.getMessage();
+		iphone.setMessage("hello");
+		iphone.clearMessage();
+		
+		galaxy.setLogin(true);
+		galaxy.getMessage();
+		galaxy.setMessage("hi");
+		galaxy.changeKeyboard();
+		
+		galaxy.fileDownload();
+		galaxy.fileUpload();
+		
+		iphone.draw_textBox();    // 그래픽 ios 에서 전송버튼을 그린
+		iphone.draw_submitButton();
+		
+	}
+	
+
+}
