@@ -1,6 +1,6 @@
-package quiz;
+package study;
 
-public class b {
+public class b { // 함수만드는 법
 	
 	public static void main(String[] args) {
 		

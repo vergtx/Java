@@ -1,4 +1,4 @@
-package quiz;
+package study;
 
 public class c {
 	
