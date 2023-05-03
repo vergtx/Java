@@ -1,4 +1,4 @@
-package 예제;
+package 자료구조;
 
 import java.util.Random;
 
@@ -7,7 +7,7 @@ public class 메소드배열전달 {
     static void getData(int[] items) {
         Random r = new Random();
         for (int i = 0 ; i < items.length; i++) {
-            items[i] = r.nextInt(99); // 난수 생성하며 배열에 반영
+            items[i] = r.nextInt(56); // 난수 생성하며 배열에 반영
         }
     }
 	
@@ -30,7 +30,7 @@ public class 메소드배열전달 {
     static void sortData(int[] items) {
         for (int i = 0; i < items.length ; i++) {
             for (int j = i + 1 ; j < items.length ; j++) { // 이중 배열의 특정 요소 비교
-                if (items[i] > items[j]) {
+                if (items[i] < items[j]) {
                 	swapData(items, i, j); // swapData 함수 호출
                 }
             }
