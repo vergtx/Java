@@ -14,31 +14,25 @@ class PhyscData implements Comparable<PhyscData> {
 	}
 
 	@Override
-	public int compareTo(PhyscData o) { // 이거를 다른 방법으로 바꿔봐야 겠다.
-		if (this.name.equals(o.name)) {
-			return 0;
-		}
-		if (this.name.compareTo(o.name) < 0) {
-			return -1;
-		} else {
-			return 1;
-		}
+	public int compareTo(PhyscData o) {  // 이거를 다른 방법으로 바꿔봐야 겠다.
+		return this.name.compareTo(o.name);
 	}
 
 	@Override
-	public String toString() { // toString()은 자바 객체의 문자열 표현을 반환하는 메서드
-								// 일반적으로 개발자가 클래스를 작성할 때, toString() 메서드를 오버라이딩하여 해당 객체를 문자열로 나타내는 방법을 정의합니다.
+	public String toString() { 				// toString()은 자바 객체의 문자열 표현을 반환하는 메서드
+											// 일반적으로 개발자가 클래스를 작성할 때, toString() 메서드를 오버라이딩하여 해당 객체를 문자열로 나타내는 방법을 정의합니다.
+
 		return name + " " + height + " " + vision;
 	}
 }
 
-public class 과제1_2장기본자료구조 {
+public class 과제1_2장기본자료구조2 {
 
 	static void showData(PhyscData[] items) {
 		for (int i = 0; i < items.length; i++) {
 			System.out.println(items[i] + ""); // 배열의 모든 요소 출력
 		}
-
+		
 	}
 
 	static void sortData(PhyscData[] data) {
