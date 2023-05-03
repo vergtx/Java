@@ -24,7 +24,7 @@ public class 스트링배열 {
     static void sortData(String[] items) {
         for (int i = 0; i < items.length ; i++) {
             for (int j = i + 1 ; j < items.length ; j++) { // 이중 배열의 특정 요소 비교
-                if (items[i].compareTo(items[j]) != 0 ) { //  *compareTo를 사용하여 items[i]와 items[j]를 비교 비교하여 음수 같으면 0 작으면 양수
+                if (items[i].compareTo(items[j]) < 0 ) { //  *compareTo를 사용하여 items[i]와 items[j]를 비교 비교하여 크면 음수 같으면 0 작으면 양수
                 	swapData(items, i, j); // swapData 함수 호출
                 }
             }
