@@ -15,6 +15,11 @@ public  PhyscData(String name, int height, double vision) { // 여기서 생성�
 	
 }
 
+@Override
+public int compareTo(PhyscData o) {
+	// TODO Auto-generated method stub
+	return 0;
+}
 public class 과제1_2장기본자료구조 {
 	
 
@@ -60,3 +65,5 @@ public class 과제1_2장기본자료구조 {
 
 	
 }
+
+
