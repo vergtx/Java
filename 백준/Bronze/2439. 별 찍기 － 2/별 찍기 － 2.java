@@ -1,21 +1,30 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 
 public class Main {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumberFormatException, IOException {
 		
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out)); 
 		
-		for (int i = 0; i < n; i++) { // 0,1,2,3,4 ---- 4줄 반복
-			for(int j = n-i-1; j > 0; j--) {  //전체 삼각형의 높이 n에서 i+1을 뺀 값만큼 빈 칸을 출력합니다
-				System.out.print(" "); 
+		int n = Integer.parseInt(br.readLine());
+		
+		br.close();
+		
+		for (int i =0 ; i<n ; i++) {
+			for(int j = n-i-1 ; j > 0 ; j--) {
+				System.out.print(" ");
 			}
-			for (int k = 0; k < i + 1; k++) { 
+			for(int z= 0 ; z < i+1 ; z++) {
 				System.out.print("*");
-			}
-			System.out.print("\n");
-		}
+			} System.out.print("\n");
+		} 
 		
+		bw.flush();
+		bw.close();
 	}
 	
 }
