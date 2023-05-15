@@ -8,7 +8,7 @@ import java.util.List;
 
 //int형 고정 길이 큐
 class objectQueue {
-    private List<Point> que;  
+    private List<Point> que; // ArrayList로 변경
 	private int capacity; // 큐의 크기
 	private int front; // 맨 처음 요소 커서
 	private int rear; // 맨 끝 요소 커서
