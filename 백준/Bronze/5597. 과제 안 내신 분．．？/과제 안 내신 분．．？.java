@@ -8,17 +8,12 @@ public class Main {
 		
 		boolean [] attend = new boolean[31]; // 크기가 31인 배열 선언
 		
-		
-		//배열 attend 1부터 30까지 fasle로 초기화
-		for (int i = 1 ; i <= 30 ; i++) {
-			attend[i] = false;
-					
-		}
+
 		
 		 // 출석한 학생들의 번호를 입력 받아 해당하는 배열 요소를 true로 변경
 		for (int i = 1; i < 29; i++) {
-			int student = sc.nextInt();
-			attend[student] = true;
+			int AttendedStudent = sc.nextInt();
+			attend[AttendedStudent] = true;
 			
 			
 		}
